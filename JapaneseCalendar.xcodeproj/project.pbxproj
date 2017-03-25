@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B9FCB101E865F2200A12195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB0F1E865F2200A12195 /* AppDelegate.swift */; };
+		7B9FCB121E865F2200A12195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB111E865F2200A12195 /* ViewController.swift */; };
+		7B9FCB151E865F2300A12195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB131E865F2300A12195 /* Main.storyboard */; };
+		7B9FCB181E865F2300A12195 /* JapaneseCalendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB161E865F2300A12195 /* JapaneseCalendar.xcdatamodeld */; };
+		7B9FCB1A1E865F2300A12195 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB191E865F2300A12195 /* Assets.xcassets */; };
+		7B9FCB1D1E865F2300A12195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB1B1E865F2300A12195 /* LaunchScreen.storyboard */; };
+		7B9FCB281E865F2400A12195 /* JapaneseCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB271E865F2400A12195 /* JapaneseCalendarTests.swift */; };
+		7B9FCB331E865F2400A12195 /* JapaneseCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB321E865F2400A12195 /* JapaneseCalendarUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B9FCB241E865F2400A12195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B9FCB041E865F2000A12195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9FCB0B1E865F2100A12195;
+			remoteInfo = JapaneseCalendar;
+		};
+		7B9FCB2F1E865F2400A12195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B9FCB041E865F2000A12195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9FCB0B1E865F2100A12195;
+			remoteInfo = JapaneseCalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B9FCB0C1E865F2200A12195 /* JapaneseCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9FCB0F1E865F2200A12195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B9FCB111E865F2200A12195 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B9FCB141E865F2300A12195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B9FCB171E865F2300A12195 /* JapaneseCalendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JapaneseCalendar.xcdatamodel; sourceTree = "<group>"; };
+		7B9FCB191E865F2300A12195 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B9FCB1C1E865F2300A12195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B9FCB1E1E865F2300A12195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9FCB231E865F2400A12195 /* JapaneseCalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseCalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9FCB271E865F2400A12195 /* JapaneseCalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseCalendarTests.swift; sourceTree = "<group>"; };
+		7B9FCB291E865F2400A12195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9FCB2E1E865F2400A12195 /* JapaneseCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9FCB321E865F2400A12195 /* JapaneseCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseCalendarUITests.swift; sourceTree = "<group>"; };
+		7B9FCB341E865F2400A12195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B9FCB091E865F2100A12195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9FCB201E865F2400A12195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9FCB2B1E865F2400A12195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B9FCB031E865F2000A12195 = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB0E1E865F2200A12195 /* JapaneseCalendar */,
+				7B9FCB261E865F2400A12195 /* JapaneseCalendarTests */,
+				7B9FCB311E865F2400A12195 /* JapaneseCalendarUITests */,
+				7B9FCB0D1E865F2200A12195 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B9FCB0D1E865F2200A12195 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB0C1E865F2200A12195 /* JapaneseCalendar.app */,
+				7B9FCB231E865F2400A12195 /* JapaneseCalendarTests.xctest */,
+				7B9FCB2E1E865F2400A12195 /* JapaneseCalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B9FCB0E1E865F2200A12195 /* JapaneseCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB0F1E865F2200A12195 /* AppDelegate.swift */,
+				7B9FCB111E865F2200A12195 /* ViewController.swift */,
+				7B9FCB131E865F2300A12195 /* Main.storyboard */,
+				7B9FCB191E865F2300A12195 /* Assets.xcassets */,
+				7B9FCB1B1E865F2300A12195 /* LaunchScreen.storyboard */,
+				7B9FCB1E1E865F2300A12195 /* Info.plist */,
+				7B9FCB161E865F2300A12195 /* JapaneseCalendar.xcdatamodeld */,
+			);
+			path = JapaneseCalendar;
+			sourceTree = "<group>";
+		};
+		7B9FCB261E865F2400A12195 /* JapaneseCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB271E865F2400A12195 /* JapaneseCalendarTests.swift */,
+				7B9FCB291E865F2400A12195 /* Info.plist */,
+			);
+			path = JapaneseCalendarTests;
+			sourceTree = "<group>";
+		};
+		7B9FCB311E865F2400A12195 /* JapaneseCalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB321E865F2400A12195 /* JapaneseCalendarUITests.swift */,
+				7B9FCB341E865F2400A12195 /* Info.plist */,
+			);
+			path = JapaneseCalendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B9FCB0B1E865F2100A12195 /* JapaneseCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9FCB371E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendar" */;
+			buildPhases = (
+				7B9FCB081E865F2100A12195 /* Sources */,
+				7B9FCB091E865F2100A12195 /* Frameworks */,
+				7B9FCB0A1E865F2100A12195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JapaneseCalendar;
+			productName = JapaneseCalendar;
+			productReference = 7B9FCB0C1E865F2200A12195 /* JapaneseCalendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B9FCB221E865F2400A12195 /* JapaneseCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9FCB3A1E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendarTests" */;
+			buildPhases = (
+				7B9FCB1F1E865F2400A12195 /* Sources */,
+				7B9FCB201E865F2400A12195 /* Frameworks */,
+				7B9FCB211E865F2400A12195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9FCB251E865F2400A12195 /* PBXTargetDependency */,
+			);
+			name = JapaneseCalendarTests;
+			productName = JapaneseCalendarTests;
+			productReference = 7B9FCB231E865F2400A12195 /* JapaneseCalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B9FCB2D1E865F2400A12195 /* JapaneseCalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9FCB3D1E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendarUITests" */;
+			buildPhases = (
+				7B9FCB2A1E865F2400A12195 /* Sources */,
+				7B9FCB2B1E865F2400A12195 /* Frameworks */,
+				7B9FCB2C1E865F2400A12195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9FCB301E865F2400A12195 /* PBXTargetDependency */,
+			);
+			name = JapaneseCalendarUITests;
+			productName = JapaneseCalendarUITests;
+			productReference = 7B9FCB2E1E865F2400A12195 /* JapaneseCalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B9FCB041E865F2000A12195 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "将汰宮平";
+				TargetAttributes = {
+					7B9FCB0B1E865F2100A12195 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					7B9FCB221E865F2400A12195 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7B9FCB0B1E865F2100A12195;
+					};
+					7B9FCB2D1E865F2400A12195 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7B9FCB0B1E865F2100A12195;
+					};
+				};
+			};
+			buildConfigurationList = 7B9FCB071E865F2000A12195 /* Build configuration list for PBXProject "JapaneseCalendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B9FCB031E865F2000A12195;
+			productRefGroup = 7B9FCB0D1E865F2200A12195 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B9FCB0B1E865F2100A12195 /* JapaneseCalendar */,
+				7B9FCB221E865F2400A12195 /* JapaneseCalendarTests */,
+				7B9FCB2D1E865F2400A12195 /* JapaneseCalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B9FCB0A1E865F2100A12195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9FCB1D1E865F2300A12195 /* LaunchScreen.storyboard in Resources */,
+				7B9FCB1A1E865F2300A12195 /* Assets.xcassets in Resources */,
+				7B9FCB151E865F2300A12195 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9FCB211E865F2400A12195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9FCB2C1E865F2400A12195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B9FCB081E865F2100A12195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9FCB121E865F2200A12195 /* ViewController.swift in Sources */,
+				7B9FCB181E865F2300A12195 /* JapaneseCalendar.xcdatamodeld in Sources */,
+				7B9FCB101E865F2200A12195 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9FCB1F1E865F2400A12195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9FCB281E865F2400A12195 /* JapaneseCalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9FCB2A1E865F2400A12195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9FCB331E865F2400A12195 /* JapaneseCalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B9FCB251E865F2400A12195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9FCB0B1E865F2100A12195 /* JapaneseCalendar */;
+			targetProxy = 7B9FCB241E865F2400A12195 /* PBXContainerItemProxy */;
+		};
+		7B9FCB301E865F2400A12195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9FCB0B1E865F2100A12195 /* JapaneseCalendar */;
+			targetProxy = 7B9FCB2F1E865F2400A12195 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B9FCB131E865F2300A12195 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9FCB141E865F2300A12195 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B9FCB1B1E865F2300A12195 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9FCB1C1E865F2300A12195 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B9FCB351E865F2400A12195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B9FCB361E865F2400A12195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B9FCB381E865F2400A12195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JapaneseCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7B9FCB391E865F2400A12195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JapaneseCalendar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7B9FCB3B1E865F2400A12195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JapaneseCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseCalendar.app/JapaneseCalendar";
+			};
+			name = Debug;
+		};
+		7B9FCB3C1E865F2400A12195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JapaneseCalendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JapaneseCalendar.app/JapaneseCalendar";
+			};
+			name = Release;
+		};
+		7B9FCB3E1E865F2400A12195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JapaneseCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JapaneseCalendar;
+			};
+			name = Debug;
+		};
+		7B9FCB3F1E865F2400A12195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = JapaneseCalendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = JapaneseCalendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B9FCB071E865F2000A12195 /* Build configuration list for PBXProject "JapaneseCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9FCB351E865F2400A12195 /* Debug */,
+				7B9FCB361E865F2400A12195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B9FCB371E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9FCB381E865F2400A12195 /* Debug */,
+				7B9FCB391E865F2400A12195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B9FCB3A1E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9FCB3B1E865F2400A12195 /* Debug */,
+				7B9FCB3C1E865F2400A12195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B9FCB3D1E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9FCB3E1E865F2400A12195 /* Debug */,
+				7B9FCB3F1E865F2400A12195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7B9FCB161E865F2300A12195 /* JapaneseCalendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7B9FCB171E865F2300A12195 /* JapaneseCalendar.xcdatamodel */,
+			);
+			currentVersion = 7B9FCB171E865F2300A12195 /* JapaneseCalendar.xcdatamodel */;
+			path = JapaneseCalendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7B9FCB041E865F2000A12195 /* Project object */;
+}
