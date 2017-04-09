@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,6 +25,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTk-UT-WXd">
                                 <rect key="frame" x="111" y="558" width="153" height="30"/>
                                 <state key="normal" title="ウィジェット設定方法"/>
+                                <connections>
+                                    <segue destination="gbu-Lv-QM1" kind="showDetail" id="qUi-y2-bxw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和暦ウィジェット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keK-PW-N7E">
                                 <rect key="frame" x="118" y="75" width="139" height="21"/>
@@ -46,6 +49,9 @@
                                 <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
                                     <!--1970-01-01 11:00:00 +0000-->
                                 </date>
+                                <connections>
+                                    <action selector="DateSelecter:" destination="BYZ-38-t0r" eventType="valueChanged" id="w39-2M-byg"/>
+                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2019年 12月 20日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCI-9U-XAA">
                                 <rect key="frame" x="114" y="208" width="146" height="21"/>
@@ -70,15 +76,19 @@
                             <constraint firstItem="HTk-UT-WXd" firstAttribute="top" secondItem="wuz-Wu-fgl" secondAttribute="bottom" constant="77" id="q2o-7B-gdp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="vCI-9U-XAA" id="jjq-vl-NPL"/>
+                        <outlet property="japaneseCalenderText" destination="DN1-lA-IZr" id="TDH-Z6-7HY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="65.217391304347828"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail-->
         <scene sceneID="Wg3-u9-QQN">
             <objects>
-                <viewController id="gbu-Lv-QM1" sceneMemberID="viewController">
+                <viewController id="gbu-Lv-QM1" customClass="Detail" customModule="JapaneseCalendar" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HcL-3X-SxM"/>
                         <viewControllerLayoutGuide type="bottom" id="5Mc-RT-fZm"/>
@@ -87,24 +97,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="widget.png" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-xb-4oW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="widget.png" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-xb-4oW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIh-CS-4vk">
+                                <rect key="frame" x="330" y="34" width="29" height="29"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="Kxa-zN-EoM"/>
+                                    <constraint firstAttribute="width" constant="29" id="ZKC-tk-AJ1"/>
+                                </constraints>
+                                <state key="normal" image="close.png"/>
+                                <connections>
+                                    <action selector="Btn:" destination="gbu-Lv-QM1" eventType="touchUpInside" id="Qje-6j-ydC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fIh-CS-4vk" firstAttribute="top" secondItem="HcL-3X-SxM" secondAttribute="bottom" constant="14" id="129-t8-zyQ"/>
+                            <constraint firstAttribute="trailing" secondItem="lM3-xb-4oW" secondAttribute="trailing" id="6wc-50-Wtl"/>
+                            <constraint firstItem="fIh-CS-4vk" firstAttribute="trailing" secondItem="t1A-GD-kaT" secondAttribute="trailingMargin" id="Hxb-vy-UaN"/>
+                            <constraint firstItem="lM3-xb-4oW" firstAttribute="leading" secondItem="t1A-GD-kaT" secondAttribute="leading" id="RyU-hu-g0o"/>
                             <constraint firstItem="lM3-xb-4oW" firstAttribute="top" secondItem="t1A-GD-kaT" secondAttribute="top" id="WNF-7v-4Gl"/>
                             <constraint firstItem="lM3-xb-4oW" firstAttribute="leading" secondItem="t1A-GD-kaT" secondAttribute="leading" id="f6r-wJ-mba"/>
+                            <constraint firstItem="5Mc-RT-fZm" firstAttribute="top" secondItem="lM3-xb-4oW" secondAttribute="bottom" id="j3N-MO-h1T"/>
                             <constraint firstAttribute="trailing" secondItem="lM3-xb-4oW" secondAttribute="trailing" id="odx-tx-8Bg"/>
+                            <constraint firstItem="lM3-xb-4oW" firstAttribute="top" secondItem="t1A-GD-kaT" secondAttribute="top" id="zuq-T4-JU6"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdM-fM-eKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="794" y="65"/>
+            <point key="canvasLocation" x="957.60000000000002" y="59.820089955022496"/>
         </scene>
     </scenes>
     <resources>
+        <image name="close.png" width="200" height="200"/>
         <image name="widget.png" width="1400" height="2662"/>
     </resources>
 </document>

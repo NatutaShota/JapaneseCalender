@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A998F71E9A764C004D89EA /* widget.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A998F61E9A764C004D89EA /* widget.png */; };
+		43A998F91E9A7A6E004D89EA /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 43A998F81E9A7A6E004D89EA /* close.png */; };
+		43A998FB1E9A7E7E004D89EA /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A998FA1E9A7E7E004D89EA /* Detail.swift */; };
 		7B9FCB101E865F2200A12195 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB0F1E865F2200A12195 /* AppDelegate.swift */; };
 		7B9FCB121E865F2200A12195 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB111E865F2200A12195 /* ViewController.swift */; };
 		7B9FCB151E865F2300A12195 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB131E865F2300A12195 /* Main.storyboard */; };
@@ -19,7 +22,6 @@
 		7B9FCB4A1E86606500A12195 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB491E86606500A12195 /* TodayViewController.swift */; };
 		7B9FCB4D1E86606500A12195 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB4B1E86606500A12195 /* MainInterface.storyboard */; };
 		7B9FCB511E86606500A12195 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B9FCB441E86606400A12195 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7B9FCB591E86B9F400A12195 /* widget.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB581E86B9F400A12195 /* widget.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		43A998F61E9A764C004D89EA /* widget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = widget.png; path = ../widget.png; sourceTree = "<group>"; };
+		43A998F81E9A7A6E004D89EA /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = ../close.png; sourceTree = "<group>"; };
+		43A998FA1E9A7E7E004D89EA /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		7B9FCB0C1E865F2200A12195 /* JapaneseCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9FCB0F1E865F2200A12195 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B9FCB111E865F2200A12195 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +85,6 @@
 		7B9FCB491E86606500A12195 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		7B9FCB4C1E86606500A12195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7B9FCB4E1E86606500A12195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B9FCB581E86B9F400A12195 /* widget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = widget.png; path = ../../../Desktop/widget.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				7B9FCB1B1E865F2300A12195 /* LaunchScreen.storyboard */,
 				7B9FCB1E1E865F2300A12195 /* Info.plist */,
 				7B9FCB161E865F2300A12195 /* JapaneseCalendar.xcdatamodeld */,
+				43A998FA1E9A7E7E004D89EA /* Detail.swift */,
 			);
 			path = JapaneseCalendar;
 			sourceTree = "<group>";
@@ -193,7 +198,8 @@
 		7B9FCB571E86B9A200A12195 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				7B9FCB581E86B9F400A12195 /* widget.png */,
+				43A998F81E9A7A6E004D89EA /* close.png */,
+				43A998F61E9A764C004D89EA /* widget.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -332,8 +338,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B9FCB1D1E865F2300A12195 /* LaunchScreen.storyboard in Resources */,
-				7B9FCB591E86B9F400A12195 /* widget.png in Resources */,
 				7B9FCB1A1E865F2300A12195 /* Assets.xcassets in Resources */,
+				43A998F71E9A764C004D89EA /* widget.png in Resources */,
+				43A998F91E9A7A6E004D89EA /* close.png in Resources */,
 				7B9FCB151E865F2300A12195 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +376,7 @@
 			files = (
 				7B9FCB121E865F2200A12195 /* ViewController.swift in Sources */,
 				7B9FCB181E865F2300A12195 /* JapaneseCalendar.xcdatamodeld in Sources */,
+				43A998FB1E9A7E7E004D89EA /* Detail.swift in Sources */,
 				7B9FCB101E865F2200A12195 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
