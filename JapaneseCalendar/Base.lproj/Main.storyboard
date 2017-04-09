@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JapaneseCalendar" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,90 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTk-UT-WXd">
+                                <rect key="frame" x="111" y="558" width="153" height="30"/>
+                                <state key="normal" title="ウィジェット設定方法"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和暦ウィジェット" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keK-PW-N7E">
+                                <rect key="frame" x="118" y="75" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="平成 19年" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DN1-lA-IZr">
+                                <rect key="frame" x="64" y="132" width="246" height="68.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="57"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.50588235290000005" green="0.69411764710000001" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wuz-Wu-fgl">
+                                <rect key="frame" x="16" y="265" width="343" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="513410618.51603502">
+                                    <!--2017-04-09 06:03:38 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                    <!--1970-01-01 11:00:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="2019年 12月 20日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCI-9U-XAA">
+                                <rect key="frame" x="114" y="208" width="146" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="keK-PW-N7E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="DjC-vX-C2v"/>
+                            <constraint firstItem="wuz-Wu-fgl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E7E-Bz-ur9"/>
+                            <constraint firstItem="vCI-9U-XAA" firstAttribute="top" secondItem="DN1-lA-IZr" secondAttribute="bottom" constant="7.5" id="ExD-wN-nGg"/>
+                            <constraint firstItem="wuz-Wu-fgl" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="H0L-bD-2FU"/>
+                            <constraint firstItem="wuz-Wu-fgl" firstAttribute="top" secondItem="vCI-9U-XAA" secondAttribute="bottom" constant="36" id="Lqg-xP-8e6"/>
+                            <constraint firstItem="vCI-9U-XAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T5r-UD-X8K"/>
+                            <constraint firstItem="DN1-lA-IZr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yif-aA-eoz"/>
+                            <constraint firstItem="DN1-lA-IZr" firstAttribute="top" secondItem="keK-PW-N7E" secondAttribute="bottom" constant="36" id="bch-XN-yHJ"/>
+                            <constraint firstItem="wuz-Wu-fgl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="d3U-Yi-ErY"/>
+                            <constraint firstItem="keK-PW-N7E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eqL-F5-1iV"/>
+                            <constraint firstItem="HTk-UT-WXd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="itC-dk-3oC"/>
+                            <constraint firstItem="HTk-UT-WXd" firstAttribute="top" secondItem="wuz-Wu-fgl" secondAttribute="bottom" constant="77" id="q2o-7B-gdp"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="65.217391304347828"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Wg3-u9-QQN">
+            <objects>
+                <viewController id="gbu-Lv-QM1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HcL-3X-SxM"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Mc-RT-fZm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t1A-GD-kaT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="widget.png" translatesAutoresizingMaskIntoConstraints="NO" id="lM3-xb-4oW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lM3-xb-4oW" firstAttribute="top" secondItem="t1A-GD-kaT" secondAttribute="top" id="WNF-7v-4Gl"/>
+                            <constraint firstItem="lM3-xb-4oW" firstAttribute="leading" secondItem="t1A-GD-kaT" secondAttribute="leading" id="f6r-wJ-mba"/>
+                            <constraint firstAttribute="trailing" secondItem="lM3-xb-4oW" secondAttribute="trailing" id="odx-tx-8Bg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdM-fM-eKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="794" y="65"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="widget.png" width="1400" height="2662"/>
+    </resources>
 </document>

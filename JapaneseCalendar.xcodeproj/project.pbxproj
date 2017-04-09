@@ -15,6 +15,11 @@
 		7B9FCB1D1E865F2300A12195 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB1B1E865F2300A12195 /* LaunchScreen.storyboard */; };
 		7B9FCB281E865F2400A12195 /* JapaneseCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB271E865F2400A12195 /* JapaneseCalendarTests.swift */; };
 		7B9FCB331E865F2400A12195 /* JapaneseCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB321E865F2400A12195 /* JapaneseCalendarUITests.swift */; };
+		7B9FCB471E86606500A12195 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B9FCB461E86606500A12195 /* NotificationCenter.framework */; };
+		7B9FCB4A1E86606500A12195 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9FCB491E86606500A12195 /* TodayViewController.swift */; };
+		7B9FCB4D1E86606500A12195 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB4B1E86606500A12195 /* MainInterface.storyboard */; };
+		7B9FCB511E86606500A12195 /* widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B9FCB441E86606400A12195 /* widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B9FCB591E86B9F400A12195 /* widget.png in Resources */ = {isa = PBXBuildFile; fileRef = 7B9FCB581E86B9F400A12195 /* widget.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +37,28 @@
 			remoteGlobalIDString = 7B9FCB0B1E865F2100A12195;
 			remoteInfo = JapaneseCalendar;
 		};
+		7B9FCB4F1E86606500A12195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B9FCB041E865F2000A12195 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9FCB431E86606400A12195;
+			remoteInfo = widget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B9FCB551E86606500A12195 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7B9FCB511E86606500A12195 /* widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7B9FCB0C1E865F2200A12195 /* JapaneseCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JapaneseCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +75,12 @@
 		7B9FCB2E1E865F2400A12195 /* JapaneseCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapaneseCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9FCB321E865F2400A12195 /* JapaneseCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseCalendarUITests.swift; sourceTree = "<group>"; };
 		7B9FCB341E865F2400A12195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9FCB441E86606400A12195 /* widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9FCB461E86606500A12195 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		7B9FCB491E86606500A12195 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		7B9FCB4C1E86606500A12195 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7B9FCB4E1E86606500A12195 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9FCB581E86B9F400A12195 /* widget.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = widget.png; path = ../../../Desktop/widget.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +105,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B9FCB411E86606400A12195 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9FCB471E86606500A12195 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7B9FCB031E865F2000A12195 = {
 			isa = PBXGroup;
 			children = (
+				7B9FCB571E86B9A200A12195 /* Resource */,
 				7B9FCB0E1E865F2200A12195 /* JapaneseCalendar */,
 				7B9FCB261E865F2400A12195 /* JapaneseCalendarTests */,
 				7B9FCB311E865F2400A12195 /* JapaneseCalendarUITests */,
+				7B9FCB481E86606500A12195 /* widget */,
+				7B9FCB451E86606500A12195 /* Frameworks */,
 				7B9FCB0D1E865F2200A12195 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +135,7 @@
 				7B9FCB0C1E865F2200A12195 /* JapaneseCalendar.app */,
 				7B9FCB231E865F2400A12195 /* JapaneseCalendarTests.xctest */,
 				7B9FCB2E1E865F2400A12195 /* JapaneseCalendarUITests.xctest */,
+				7B9FCB441E86606400A12195 /* widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +172,32 @@
 			path = JapaneseCalendarUITests;
 			sourceTree = "<group>";
 		};
+		7B9FCB451E86606500A12195 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB461E86606500A12195 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B9FCB481E86606500A12195 /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB491E86606500A12195 /* TodayViewController.swift */,
+				7B9FCB4B1E86606500A12195 /* MainInterface.storyboard */,
+				7B9FCB4E1E86606500A12195 /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+		7B9FCB571E86B9A200A12195 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7B9FCB581E86B9F400A12195 /* widget.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +208,12 @@
 				7B9FCB081E865F2100A12195 /* Sources */,
 				7B9FCB091E865F2100A12195 /* Frameworks */,
 				7B9FCB0A1E865F2100A12195 /* Resources */,
+				7B9FCB551E86606500A12195 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B9FCB501E86606500A12195 /* PBXTargetDependency */,
 			);
 			name = JapaneseCalendar;
 			productName = JapaneseCalendar;
@@ -184,6 +256,23 @@
 			productReference = 7B9FCB2E1E865F2400A12195 /* JapaneseCalendarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		7B9FCB431E86606400A12195 /* widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9FCB521E86606500A12195 /* Build configuration list for PBXNativeTarget "widget" */;
+			buildPhases = (
+				7B9FCB401E86606400A12195 /* Sources */,
+				7B9FCB411E86606400A12195 /* Frameworks */,
+				7B9FCB421E86606400A12195 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widget;
+			productName = widget;
+			productReference = 7B9FCB441E86606400A12195 /* widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +285,7 @@
 				TargetAttributes = {
 					7B9FCB0B1E865F2100A12195 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EM4P34W49C;
 						ProvisioningStyle = Automatic;
 					};
 					7B9FCB221E865F2400A12195 = {
@@ -207,6 +297,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 7B9FCB0B1E865F2100A12195;
+					};
+					7B9FCB431E86606400A12195 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EM4P34W49C;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -226,6 +321,7 @@
 				7B9FCB0B1E865F2100A12195 /* JapaneseCalendar */,
 				7B9FCB221E865F2400A12195 /* JapaneseCalendarTests */,
 				7B9FCB2D1E865F2400A12195 /* JapaneseCalendarUITests */,
+				7B9FCB431E86606400A12195 /* widget */,
 			);
 		};
 /* End PBXProject section */
@@ -236,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B9FCB1D1E865F2300A12195 /* LaunchScreen.storyboard in Resources */,
+				7B9FCB591E86B9F400A12195 /* widget.png in Resources */,
 				7B9FCB1A1E865F2300A12195 /* Assets.xcassets in Resources */,
 				7B9FCB151E865F2300A12195 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +349,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9FCB421E86606400A12195 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9FCB4D1E86606500A12195 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +389,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B9FCB401E86606400A12195 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9FCB4A1E86606500A12195 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +409,11 @@
 			isa = PBXTargetDependency;
 			target = 7B9FCB0B1E865F2100A12195 /* JapaneseCalendar */;
 			targetProxy = 7B9FCB2F1E865F2400A12195 /* PBXContainerItemProxy */;
+		};
+		7B9FCB501E86606500A12195 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9FCB431E86606400A12195 /* widget */;
+			targetProxy = 7B9FCB4F1E86606500A12195 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -314,6 +432,14 @@
 				7B9FCB1C1E865F2300A12195 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7B9FCB4B1E86606500A12195 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9FCB4C1E86606500A12195 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,10 +539,12 @@
 		7B9FCB381E865F2400A12195 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EM4P34W49C;
 				INFOPLIST_FILE = JapaneseCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendar";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.JapaneseCalendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -425,10 +553,12 @@
 		7B9FCB391E865F2400A12195 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EM4P34W49C;
 				INFOPLIST_FILE = JapaneseCalendar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.shota.JapaneseCalendar";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.JapaneseCalendar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -488,6 +618,34 @@
 			};
 			name = Release;
 		};
+		7B9FCB531E86606500A12195 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EM4P34W49C;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.JapaneseCalendar.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7B9FCB541E86606500A12195 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EM4P34W49C;
+				INFOPLIST_FILE = widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.ser-vice.JapaneseCalendar.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,6 +665,7 @@
 				7B9FCB391E865F2400A12195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B9FCB3A1E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +674,7 @@
 				7B9FCB3C1E865F2400A12195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B9FCB3D1E865F2400A12195 /* Build configuration list for PBXNativeTarget "JapaneseCalendarUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +683,16 @@
 				7B9FCB3F1E865F2400A12195 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B9FCB521E86606500A12195 /* Build configuration list for PBXNativeTarget "widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9FCB531E86606500A12195 /* Debug */,
+				7B9FCB541E86606500A12195 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
